@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Наталья Мизикевич](https://up.htmlacademy.ru/htmlcss/25/user/1002157).
-* Наставник: [Александр Кошара] (https://htmlacademy.ru/profile/rednaxxxela).
+* Наставник: [Александр Кошара](https://htmlacademy.ru/profile/rednaxxxela).
 
 ---
 
