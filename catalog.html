@@ -57,17 +57,50 @@
       </ul>
       <h1>Перфораторы</h1> 
       <section class="filters">
-        <h2 class="filter-title">Фильтр</h2>
-         <!--Здесь будет форма-->
+        <h2>Фильтр:</h2>
+        <form class="filter" action="#" method="get"> 
+          <fieldset>
+            <legend>Цена:</legend>
+            <!--Ползунок с дипазоном-->
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label>
+              <input type="checkbox" name="bosch" checked> BOSCH
+            </label>
+            <label>
+              <input type="checkbox" name="interscol"> ИНТЕРСКОЛ
+            </label>
+            <label>
+              <input type="checkbox" name="makita" checked> MAKITA
+            </label>
+            <label>
+              <input type="checkbox" name="dewalt"> DEWALT
+            </label>
+            <label>
+              <input type="checkbox" name="hitachi"> HITACHI
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <label>
+              <input type="radio" name="battery-type" value="battery"> Аккумуляторные
+            </label>
+            <label>
+              <input type="radio" name="battery-type" value="electric-network">Сетевые
+            </label>
+          </fieldset>
+          <button class="filter-buttom" type="submit">Показать</button>
+        </form> 
       </section>
-      <div class="sorting">
-        <p>Сортировка:</p>
+      <section class="sorting">
+        <h2>Сортировка:</h2>
         <ul class="sorting-list">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-      </div>
+      </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-list">

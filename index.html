@@ -10,9 +10,12 @@
         <a class="logo">
           <img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарт">
         </a>
-        <p class="search">
-          <!--Здесь будет форма поиска-->
-        </p>
+        <div class="search">
+          <form action="#" method="get">
+            <label for="search">Поиск:</label>
+            <input type="search" name="search" id="search">
+          </form>
+        </div>
         <div class="booking-block">
           <a class="marker" href="#">Закладки: 0</a>
           <a class="basket" href="#">Корзина: 0</a>
@@ -65,10 +68,27 @@
           <h3>Доставка</h3>
           <a href="#">Бесплатно</a>
         </div>
-        <div class="slider">   <!-- Изображение вставить как фон-->
-          <h3 class="title-slider">Дрели</h3>
-          <p class="text-slider">Соседям на радость</p>
-          <a class="buttom">Открыть каталог</a>
+        <div class="slider-wrapper">
+          <div class="slider-radio-buttom">
+            <input type="radio" name="slider-radio" id="slider-perforator">
+            <input type="radio" name="slider-radio" id="slider-drill" checked>  
+          </div>
+          <div class="slider-perforator">
+            <label for="slider-perforator">
+              <span class="slider-perforator-title">Перфораторы</span>
+              <span class="slider-perforator-text">Настоящие мужские игрушки</span>
+              <a class="buttom">Открыть каталог</a>
+            </label>
+          </div>
+          <div class="slider-drill">
+            <label for="slider-drill">
+              <span class="slider-drill-title">Дрели</span>
+              <span class="slider-drill-text">Соседям на радость</span>
+              <a class="buttom">Открыть каталог</a>
+            </label>
+          </div>
+          <button class="buttom-back" type="button"><span class="visually-hidden">Назад</span></button>
+          <button class="buttom-next" type="button"><span class="visually-hidden">Вперед</span></button>
         </div>
       </section>
       <section class="popular-product">
@@ -181,23 +201,30 @@
       <section class="services">
         <h2>Сервисы</h2>
         <p class="services-text">Хороший Интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-list">
-          <li class="services-item">Доставка</li>  <!--Ссылки. (Задать вопрос)-->
-          <li class="services-item">Гарантия</li>
-          <li class="services-item">Кредит</li>
-        </ul>
-        <section class="delivery">  
-          <h3>Доставка</h3> 
-          <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        </section>
-        <section class="warranty">
-          <h3>Гарантия</h3>
-          <p class="warranty-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-        </section>
-        <section class="credit">
-          <h3>Кредит</h3>
-          <p class="credit-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        </section>
+        <div class="slider-services">
+          <div class="slider-services-buttom">
+            <input type="radio" name="services" id="delivery" value="delivery" checked>
+            <input type="radio" name="services" id="warranty" value="warranty">
+            <input type="radio" name="services" id="credit" value="credit">
+            <label for="delivery">Доставка</label>
+            <label for="warranty">Гарантия</label>
+            <label for="credit">Кредит</label>
+          </div>
+          <div class="slider-services-text">
+            <section class="delivery">  
+              <h3>Доставка</h3> 
+              <p class="delivery-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </section>
+            <section class="warranty">
+              <h3>Гарантия</h3>
+              <p class="warranty-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </section>
+            <section class="credit">
+              <h3>Кредит</h3>
+              <p class="credit-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </section>
+          </div>
+        </div>
       </section>
       <article class="about-company"> 
         <h2 class="company-title">Компания &laquo;Техномарт&raquo;</h2>
@@ -214,7 +241,7 @@
         <h2 class="contact-title">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
           <a class="map" href="map.html">
-            <img src="img/map.png" width="300" height="158" alt="Карта с офисом Техномарт">
+            <img src="img/map.png" width="300" height="158" alt="Карта офиса Техномарт улица Большая Конюшечная ул., 19">
           </a>
         <a class="buttom" href="message.html">Заблудились? Напишите нам</a> 
       </section>
@@ -263,6 +290,31 @@
           <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
-    </footer>  
+    </footer> 
+    <div class="popup-message">
+      <form action="#" method="post">
+        <label>
+          Ваше имя: <input type="text" name="name" required placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail: <input type="email" name="email" required placeholder="email@example.com">
+        </label>
+        <label>
+          Текст письма: <textarea name="message" required placeholder="В свободной форме"></textarea>
+        </label>
+        <button class="buttom" type="submit">Отправить</button>
+        <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </form>
+    </div> 
+    <div class="map-popup">
+      <img src="img/map-big.jpg" width="940" height="446" alt="Карта офиса Техномарт улица Большая Конюшечная ул., 19">
+      <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>	
+    <div class="popup-product-in-basket">
+      <p>Товар добавлен в корзину</p>
+      <a class="buttom" href="#">Оформить заказ</a>
+      <a class="buttom" href="catalog.html">Продолжить покупки</a>   <!--или это будет кнопка по аналогии с "закрыть"-->
+      <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
   </body>
 </html>
