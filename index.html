@@ -14,6 +14,7 @@
           <form action="#" method="get">
             <label for="search">Поиск:</label>
             <input type="search" name="search" id="search">
+            <button class="visually-hidden" type="submit">Поиск</button>
           </form>
         </div>
         <div class="booking-block">
@@ -77,14 +78,14 @@
             <label for="slider-perforator">
               <span class="slider-perforator-title">Перфораторы</span>
               <span class="slider-perforator-text">Настоящие мужские игрушки</span>
-              <a class="buttom">Открыть каталог</a>
+              <a class="buttom" href="#">Открыть каталог</a>
             </label>
           </div>
           <div class="slider-drill">
             <label for="slider-drill">
               <span class="slider-drill-title">Дрели</span>
               <span class="slider-drill-text">Соседям на радость</span>
-              <a class="buttom">Открыть каталог</a>
+              <a class="buttom" href="#">Открыть каталог</a>
             </label>
           </div>
           <button class="buttom-back" type="button"><span class="visually-hidden">Назад</span></button>
@@ -294,13 +295,13 @@
     <div class="popup-message">
       <form action="#" method="post">
         <label>
-          Ваше имя: <input type="text" name="name" required placeholder="Имя Фамилия">
+          <span>Ваше имя:</span><input type="text" name="name" required placeholder="Имя Фамилия">
         </label>
         <label>
-          Ваш e-mail: <input type="email" name="email" required placeholder="email@example.com">
+          <span>Ваш e-mail:</span><input type="email" name="email" required placeholder="email@example.com">
         </label>
         <label>
-          Текст письма: <textarea name="message" required placeholder="В свободной форме"></textarea>
+          <span>Текст письма:</span><textarea name="message" required placeholder="В свободной форме"></textarea>
         </label>
         <button class="buttom" type="submit">Отправить</button>
         <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
@@ -313,7 +314,7 @@
     <div class="popup-product-in-basket">
       <p>Товар добавлен в корзину</p>
       <a class="buttom" href="#">Оформить заказ</a>
-      <a class="buttom" href="catalog.html">Продолжить покупки</a>   <!--или это будет кнопка по аналогии с "закрыть"-->
+      <a class="buttom" href="catalog.html">Продолжить покупки</a>  
       <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </body>
