@@ -1,0 +1,519 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  font-family: "Cuprum", Arial, sans-serif;
+  
+  background-color: #f4f7f9;
+}
+
+.top-header {	
+  background-color: #293449;
+ 
+  font-size: 17px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;  
+  color: #ffffff;
+}
+
+.top-header a {
+  color: #ffffff;
+}
+
+.logo {
+  background-color: #ee3643;		
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: #ca2c37;	
+}
+
+.booking {
+  background-color: #63a63e;	
+}
+
+.booking:hover,
+.booking:focus {
+  background-color: #5fbb2d;	
+}
+
+h1 .page-title,  /* спросить про отступы */
+.page-title {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;	
+}
+
+.pnone-numder a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: solid 3px #ffffff;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c; 
+}
+
+.user-navigation,
+.main-navigation ul,
+.user-menu,
+.social-footer ul,
+.footer-navigation,
+.offers,
+.popular-brands-list,
+.popular-list,
+.breadcrumbs,
+.sorting-list, 
+.catalog-list,
+.pagination {
+  list-style: none;
+}
+
+
+.user-navigation a,
+.user-login a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff; /*уточнить*/
+}
+
+.user-menu a {
+  font-size: 16px;
+  color: #32425c;	
+  text-decoration: underline;	
+}
+
+.user-menu a:hover,
+.user-menu a:focus {
+  color: #ee3643;
+}
+
+.main-navigation {
+  background-color: #32425c;
+	
+}
+
+.main-navigation a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;	
+  
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  background-color: #293449; 
+}
+
+.offers-block h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #ffffff;	
+}
+
+.offers-block a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18 px;
+  color: #ffffff;	
+}
+
+.material-offers {
+  background-color: #ffbf47;	
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 213px 31px; /*уточнить*/
+}
+
+.instrument-offers {
+  background-color: #3bbce3;	
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 197px 33px; /*уточнить*/
+}
+
+.equipment-offers {
+  background-color: #dc91d8;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 31px; /*уточнить*/	
+}
+
+.discount-offers {
+  background-color: #8ed78f;	
+  background-image: url(../img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 26px; /*уточнить*/
+}
+
+.delivery-offers {
+  background-color: #ffc047;	
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 32px; /*уточнить*/
+}
+
+.popular-product h2,
+.popular-brands h2,
+.services h2,
+.about-company h2,
+.contact h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.services h2,
+.about-company h2, 
+.contact h2 {
+  color: #000000;
+}
+
+.slider-wrapper {
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;	
+	
+  background-color: #a0522d;
+}
+
+.slider-drill {
+  background-image: url(../img/slider-drill.jpg);   /*уточнить!*/
+  background-repeat: no-repeat;
+}
+
+.slider-perforator {
+  background-image: url(../img/slide-perforator.jpg);   /*уточнить!*/
+  background-repeat: no-repeat;
+}
+
+.slider-perforator-title,
+.slider-drill-title {
+  font-size: 36px;
+  font-weight: bold;	
+  line-height: 36px;
+}
+
+.slider-perforator-text,
+.slider-drill-text {
+  font-size: 18px;
+  line-height: 24px;	
+}
+
+.slider-perforator a,
+.slider-drill a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+  text-transform: uppercase;
+  background-color: #ee3643;   
+}
+
+.slider-perforator a:hover,
+.slider-drill a:hover,
+.slider-perforator a:focus,
+.slider-drill a:focus {
+  background-color: #ca2c37;	
+}
+
+.slider-perforator a:active,
+.slider-drill a:active {
+  background-color: #ba2732;	
+}
+
+.popular-product,
+.popular-brands {
+background-color: #f9f5f0;
+}
+
+.popular-product h2,
+.popular-brands h2 {
+  color: #32425c;
+}
+
+.popular-product a.buttom,
+.popular-brands a.buttom {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+  text-transform: uppercase;
+  background-color: #ee3643; 
+}
+
+.catalog-category,
+.catalog-model {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  
+}
+.old-prise {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;  
+}
+.new-prise {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643; 
+}
+.buttom-booking {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;  
+  background-color: #63a63e;
+}
+
+.buttom-booking:hover,
+.buttom-booking:focus {
+  background-color: #5fbb2d;	
+}
+
+.buttom-booking:active {
+  background-color: #518534	
+}
+
+.buttom-marker {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #32425c;  
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.buttom-marker:hover,
+.buttom-marker:focus {
+  border: solid 3px #32425c;	
+}
+
+.buttom-marker:active {
+  border: solid 3px #32425c;	
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.services {
+  background-color: #f4f7f9;	
+}
+
+.services h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase; 
+}
+
+.about-company a,
+.contact a {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+  text-transform: uppercase;
+  background-color: #ee3643;   
+}
+ 
+.breadcrumbs a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.breadcrumbs-current {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-page-title {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filters h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.filters label { 
+font-family: "PT Sans", "Arial", sans-serif;
+font-size: 15px;
+line-height: 20px;
+text-transform: uppercase;
+color: #000000;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting h2 {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.sorting-list a {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-list a:hover,
+.sorting-list a:focus {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+.sorting-list a:active {   /*уточнить*/
+color: #ee3643;
+border-bottom: none;
+}
+
+.pagination-item a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-transform: uppercase;
+  color: #000000;
+  border: solid 1px #e5e5e5;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  border: solid 1px #bdc6ca;
+}
+
+.pagination-item a:active {
+  border: solid 1px #ee3643;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+ /* Футер */
+.footer-top {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  color: #f1f5f7;
+  
+  background-color: #32425c;  
+}
+
+.footer-copyright {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  color: #ffffff;
+  
+  background-color: #293449;  
+}
+
+.footer-navigation a,
+.footer-contact a {
+  color: #ffffff;
+}  
+
+.offers a, 
+.mail a,
+.developer a {
+  color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus,
+.offers a:hover, 
+.offers a:focus, 
+.footer-copyright a:hover,
+.footer-copyright a:focus  {
+  text-decoration: underline;		
+}
+
+.footer-navigation a:active {
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.offers a:active {
+  color: rgba(255, 209, 128, 0.5);
+  text-decoration: none;
+}
+
+.mail a:active,
+.developer a:active {
+  color: #ee3643;
+  text-decoration: none;	
+}
+
+
+
+
