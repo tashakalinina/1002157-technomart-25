@@ -54,7 +54,7 @@
         <h2 class="visually-hidden">Наши предложения</h2>
         <div class="material-offers">
           <h3>Материалы</h3>
-          <a href="#">На любой вкус</a>  <!--Как сделать фон?-->
+          <a href="#">На любой вкус</a>  
         </div>
         <div class="instrument-offers">
           <h3>Инструменты</h3>
@@ -98,7 +98,7 @@
       <section class="popular-product">
         <div class="popular-product-header">
           <h2>Популярные товары:</h2>         
-          <a class="buttom" href="#">Все популярные товары</a> <!--Спросить про наведение и фокус-->
+          <a class="buttom" href="#">Все популярные товары</a> <!--Уточнить про наведение и фокус (сделала)-->
         </div>
         <ul class="popular-list">
           <li class="popular-item">
@@ -226,6 +226,7 @@
             <section class="credit">
               <h3>Кредит</h3>
               <p class="credit-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a class="buttom" href="#">Отправить заявку</a>
             </section>
           </div>
         </div>
@@ -306,7 +307,9 @@
         <label>
           <span>Текст письма:</span><textarea name="message" required placeholder="В свободной форме"></textarea>
         </label>
-        <button class="buttom" type="submit">Отправить</button>
+        <div class="buttom-block">
+          <button class="buttom-checkout" type="submit">Отправить</button>
+        </div>
         <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </div> 
@@ -316,8 +319,10 @@
     </div>	
     <div class="popup-product-in-basket">
       <p>Товар добавлен в корзину</p>
-      <a class="buttom" href="#">Оформить заказ</a>
-      <a class="buttom" href="catalog.html">Продолжить покупки</a>  
+      <div class="buttom-block">
+        <a class="buttom-send" href="#">Оформить заказ</a>
+        <a class="buttom-shopping" href="catalog.html">Продолжить покупки</a>  
+      </div>
       <button class="close-popup" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
   </body>

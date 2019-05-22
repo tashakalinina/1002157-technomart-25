@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
   font-weight: normal;
+  font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
 
   background-color: #ffffff;
@@ -17,26 +17,28 @@ a {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
+  clip: rect(0 0 0 0);
 }
 
 .main-header {
   font-family: "Cuprum", Arial, sans-serif;
-  
+
   background-color: #f4f7f9;
 }
 
-.top-header {	
-  background-color: #293449;
- 
-  font-size: 17px;
-  font-weight: normal;
+.top-header {
   font-style: normal;
-  line-height: 18px;  
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 18px;
   color: #ffffff;
+
+  background-color: #293449;
 }
 
 .top-header a {
@@ -44,43 +46,45 @@ a {
 }
 
 .logo {
-  background-color: #ee3643;		
+  background-color: #ee3643;
 }
 
 .logo:hover,
 .logo:focus {
-  background-color: #ca2c37;	
+  background-color: #ca2c37;
 }
 
 .booking {
-  background-color: #63a63e;	
+  background-color: #63a63e;
 }
 
 .booking:hover,
 .booking:focus {
-  background-color: #5fbb2d;	
+  background-color: #5fbb2d;
 }
 
-h1 .page-title,  /* спросить про отступы */
+h1 .page-title,
+/* спросить про отступы */
 .page-title {
-  font-size: 16px;
-  font-weight: normal;
   font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
   line-height: 23px;
-  color: #ee3643;	
+  color: #ee3643;
 }
 
 .pnone-numder a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+
   border: solid 3px #ffffff;
 }
 
 .address {
   font-size: 14px;
   line-height: 24px;
-  color: #32425c; 
+  color: #32425c;
 }
 
 .user-navigation,
@@ -92,7 +96,7 @@ h1 .page-title,  /* спросить про отступы */
 .popular-brands-list,
 .popular-list,
 .breadcrumbs,
-.sorting-list, 
+.sorting-list,
 .catalog-list,
 .pagination {
   list-style: none;
@@ -104,13 +108,14 @@ h1 .page-title,  /* спросить про отступы */
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff; /*уточнить*/
+
+  background-color: #ffffff;
 }
 
 .user-menu a {
   font-size: 16px;
-  color: #32425c;	
-  text-decoration: underline;	
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .user-menu a:hover,
@@ -120,45 +125,45 @@ h1 .page-title,  /* спросить про отступы */
 
 .main-navigation {
   background-color: #32425c;
-	
 }
 
 .main-navigation a {
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;	
-  
+  color: #ffffff;
 }
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-  background-color: #293449; 
+  background-color: #293449;
 }
 
 .offers-block h3 {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 24px;
   font-weight: bold;
+  font-size: 24px;
   line-height: 30px;
-  color: #ffffff;	
+  font-family: "Cuprum", Arial, sans-serif; /*есть ли смысл делать отедельный селектор offers-block и прописывать для него font-family*/
+  color: #ffffff;
 }
 
 .offers-block a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18 px;
-  color: #ffffff;	
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .material-offers {
-  background-color: #ffbf47;	
+  background-color: #ffbf47;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   background-position: 213px 31px; /*уточнить*/
 }
 
 .instrument-offers {
-  background-color: #3bbce3;	
+  background-color: #3bbce3;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-position: 197px 33px; /*уточнить*/
@@ -168,18 +173,18 @@ h1 .page-title,  /* спросить про отступы */
   background-color: #dc91d8;
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
-  background-position: 191px 31px; /*уточнить*/	
+  background-position: 191px 31px; /*уточнить*/
 }
 
 .discount-offers {
-  background-color: #8ed78f;	
+  background-color: #8ed78f;
   background-image: url(../img/icon-4.svg);
   background-repeat: no-repeat;
   background-position: 196px 26px; /*уточнить*/
 }
 
 .delivery-offers {
-  background-color: #ffc047;	
+  background-color: #ffc047;
   background-image: url(../img/icon-5.svg);
   background-repeat: no-repeat;
   background-position: 191px 32px; /*уточнить*/
@@ -190,23 +195,23 @@ h1 .page-title,  /* спросить про отступы */
 .services h2,
 .about-company h2,
 .contact h2 {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
+  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
 }
 
 .services h2,
-.about-company h2, 
+.about-company h2,
 .contact h2 {
   color: #000000;
 }
 
 .slider-wrapper {
   font-family: "Cuprum", Arial, sans-serif;
-  color: #ffffff;	
-	
+  color: #ffffff;
+
   background-color: #a0522d;
 }
 
@@ -222,41 +227,42 @@ h1 .page-title,  /* спросить про отступы */
 
 .slider-perforator-title,
 .slider-drill-title {
+  font-weight: bold;
   font-size: 36px;
-  font-weight: bold;	
   line-height: 36px;
 }
 
 .slider-perforator-text,
 .slider-drill-text {
   font-size: 18px;
-  line-height: 24px;	
+  line-height: 24px;
 }
 
 .slider-perforator a,
 .slider-drill a {
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff; 
+  color: #ffffff;
   text-transform: uppercase;
-  background-color: #ee3643;   
+
+  background-color: #ee3643;
 }
 
 .slider-perforator a:hover,
 .slider-drill a:hover,
 .slider-perforator a:focus,
 .slider-drill a:focus {
-  background-color: #ca2c37;	
+  background-color: #ca2c37;
 }
 
 .slider-perforator a:active,
 .slider-drill a:active {
-  background-color: #ba2732;	
+  background-color: #ba2732;
 }
 
-.popular-product,
-.popular-brands {
-background-color: #f9f5f0;
+.popular-product-header,
+.popular-brands-header {
+  background-color: #f9f5f0;
 }
 
 .popular-product h2,
@@ -268,138 +274,179 @@ background-color: #f9f5f0;
 .popular-brands a.buttom {
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff; 
+  color: #ffffff;
   text-transform: uppercase;
-  background-color: #ee3643; 
+
+  background-color: #ee3643;
 }
 
+.popular-product-header a.buttom:hover,
+.popular-product-header a.buttom:focus,
+.popular-brands a.buttom:hover,
+.popular-brands a.buttom:focus {
+  background-color: #ca2c37;
+}
 .catalog-category,
 .catalog-model {
-  font-size: 18px;
   font-weight: bold;
+  font-size: 18px;
   line-height: 20px;
   color: #000000;
-  
 }
 .old-prise {
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 18px;
   color: #999999;
-  text-decoration: line-through;  
+  text-decoration: line-through;
 }
 .new-prise {
-  font-size: 17px;
   font-weight: bold;
+  font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #ee3643; 
+
+  background-color: #ee3643;
 }
 .buttom-booking {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #ffffff;  
+
   background-color: #63a63e;
 }
 
 .buttom-booking:hover,
 .buttom-booking:focus {
-  background-color: #5fbb2d;	
+  background-color: #5fbb2d;
 }
 
 .buttom-booking:active {
-  background-color: #518534	
+  background-color: #518534;
 }
 
 .buttom-marker {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #32425c;
   text-transform: uppercase;
-  color: #32425c;  
+
   background-color: #ffffff;
   border: solid 3px #63a63e;
 }
 
 .buttom-marker:hover,
 .buttom-marker:focus {
-  border: solid 3px #32425c;	
+  border: solid 3px #32425c;
 }
 
 .buttom-marker:active {
-  border: solid 3px #32425c;	
   color: rgba(50, 66, 92, 0.3);
+
+  border: solid 3px #32425c;
 }
 
 .services {
-  background-color: #f4f7f9;	
+  background-color: #f4f7f9;
 }
 
 .services h3 {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 36px;
   font-weight: normal;
+  font-size: 36px;
   line-height: 36px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #32425c;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
+.credit a,
 .about-company a,
 .contact a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff; 
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
-  background-color: #ee3643;   
+
+  background-color: #ee3643;
 }
- 
-.breadcrumbs a {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
+
+.credit a:hover,
+.credit a:focus,
+.about-company a:hover,
+.about-company a:focus,
+.contact a:hover,
+.contact a:focus {
+  background-color: #ca2c37;
+}
+
+.delivery-list {
+  font-size: 18px;
+  line-height: 20px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #000000;
+}
+
+.breadcrumbs a {
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .breadcrumbs-current {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .catalog-page-title {
-  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-weight: normal;
-  font-style: normal;
-  text-transform: uppercase;
+  font-family: Cuprum;
   color: #32425c;
+  text-transform: uppercase;
+
   background-color: #f2f6f8;
 }
 
 .filters h2 {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
+
   background-color: #f7f3ec;
 }
 
-.filters label { 
-font-family: "PT Sans", "Arial", sans-serif;
-font-size: 15px;
-line-height: 20px;
-text-transform: uppercase;
-color: #000000;
+.filters label {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filters legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2px;
+}
+
+.filter-buttom {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .sorting {
@@ -407,39 +454,40 @@ color: #000000;
 }
 
 .sorting h2 {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  font-weight: normal;
   font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   color: #000000;
+  text-transform: uppercase;
 }
 .sorting-list a {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+
   border-bottom: 1px dotted #ee3643;
 }
 
 .sorting-list a:hover,
 .sorting-list a:focus {
   color: #000000;
+
   border-bottom: 1px solid #ee3643;
 }
-.sorting-list a:active {   /*уточнить*/
-color: #ee3643;
-border-bottom: none;
+.sorting-list a:active {
+  /*уточнить*/
+  color: #ee3643;
+
+  border-bottom: none;
 }
 
 .pagination-item a {
-  font-family: PTSans;
   font-size: 13px;
   line-height: 1.38;
-  text-transform: uppercase;
+  font-family: PTSans;
   color: #000000;
+  text-transform: uppercase;
+
   border: solid 1px #e5e5e5;
 }
 
@@ -454,28 +502,29 @@ border-bottom: none;
 
 .pagination-item-current a {
   color: #ffffff;
+
   background-color: #ee3643;
 }
 
- /* Футер */
+/* Футер */
 .footer-top {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 18px;
   font-weight: normal;
+  font-size: 18px;
   line-height: 24px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #f1f5f7;
-  
-  background-color: #32425c;  
+
+  background-color: #32425c;
 }
 
 .footer-copyright {
-  font-family: "Cuprum", Arial, sans-serif;
-  font-size: 16px;
   font-weight: normal;
+  font-size: 16px;
   line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
-  
-  background-color: #293449;  
+
+  background-color: #293449;
 }
 
 .footer-navigation a,
@@ -483,7 +532,7 @@ border-bottom: none;
   color: #ffffff;
 }  
 
-.offers a, 
+.offers a,
 .mail a,
 .developer a {
   color: #ffd180;
@@ -491,11 +540,11 @@ border-bottom: none;
 
 .footer-navigation a:hover,
 .footer-navigation a:focus,
-.offers a:hover, 
-.offers a:focus, 
+.offers a:hover,
+.offers a:focus,
 .footer-copyright a:hover,
-.footer-copyright a:focus  {
-  text-decoration: underline;		
+.footer-copyright a:focus {
+  text-decoration: underline;
 }
 
 .footer-navigation a:active {
@@ -511,9 +560,87 @@ border-bottom: none;
 .mail a:active,
 .developer a:active {
   color: #ee3643;
-  text-decoration: none;	
+  text-decoration: none;
 }
 
+.popup-product-in-basket {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: "Cuprum", Arial, sans-serif;
+  text-align: center;
+  color: #000000;
+
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+}
+
+.buttom-block {
+  font-size: 14px;
+  line-height: 18px;
+
+  background-color: #f1f1f1;
+}
+
+.buttom-checkout {
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.buttom-shopping {
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+.close-popup {
+  /*уточнить?*/
+  background-color: #ee3643;
+  background-image: url(../img/map-close.svg);
+  background-repeat: 0;
+}
+
+.popup-message {
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000000;
+
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+}
+
+.buttom-send {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.popup-message input,
+.popup-message textarea {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #999999;
+
+  border: solid 2px #d7dcde;
+}
+
+.popup-message input:hover,
+.popup-message textarea:hover {
+  border: solid 2px #b5b5b5;
+}
+
+.popup-message input:focus,
+.popup-message textarea:focus {
+  border: solid 2px #ee3643;
+}
 
 
 
