@@ -2,13 +2,10 @@ body {
   margin: 0;
   padding: 0;
 
-  font-weight: normal;
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
-
-  background-color: #ffffff;
 }
 
 a {
@@ -25,8 +22,9 @@ a {
   clip: rect(0 0 0 0);
 }
 
+/*Header*/
 .main-header {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 
   background-color: #f4f7f9;
 }
@@ -63,9 +61,8 @@ a {
   background-color: #5fbb2d;
 }
 
-h1 .page-title,
-/* спросить про отступы */
-.page-title {
+.index-page-title,
+.page-description {
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
@@ -73,12 +70,12 @@ h1 .page-title,
   color: #ee3643;
 }
 
-.pnone-numder a {
+.phone-numder a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
 
-  border: solid 3px #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .address {
@@ -89,16 +86,7 @@ h1 .page-title,
 
 .user-navigation,
 .main-navigation ul,
-.user-menu,
-.social-footer ul,
-.footer-navigation,
-.offers,
-.popular-brands-list,
-.popular-list,
-.breadcrumbs,
-.sorting-list,
-.catalog-list,
-.pagination {
+.user-menu {
   list-style: none;
 }
 
@@ -138,18 +126,29 @@ h1 .page-title,
   background-color: #293449;
 }
 
+/*main*/
+.offers,
+.popular-brands-list,
+.popular-list,
+.breadcrumbs,
+.sorting-list,
+.catalog-list,
+.pagination {
+  list-style: none;
+}
+
 .offers-block h3 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif; /*есть ли смысл делать отедельный селектор offers-block и прописывать для него font-family*/
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
 .offers-block a {
   font-size: 14px;
-  line-height: 18 px;
-  font-family: "Cuprum", Arial, sans-serif;
+  line-height: 18px;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: rgba(0, 0, 0, 0.1);
@@ -157,35 +156,35 @@ h1 .page-title,
 
 .material-offers {
   background-color: #ffbf47;
-  background-image: url(../img/icon-1.svg);
+  background-image: url("../img/icon-1.svg");
   background-repeat: no-repeat;
   background-position: 213px 31px; /*уточнить*/
 }
 
 .instrument-offers {
   background-color: #3bbce3;
-  background-image: url(../img/icon-2.svg);
+  background-image: url("../img/icon-2.svg");
   background-repeat: no-repeat;
   background-position: 197px 33px; /*уточнить*/
 }
 
 .equipment-offers {
   background-color: #dc91d8;
-  background-image: url(../img/icon-3.svg);
+  background-image: url("../img/icon-3.svg");
   background-repeat: no-repeat;
   background-position: 191px 31px; /*уточнить*/
 }
 
 .discount-offers {
   background-color: #8ed78f;
-  background-image: url(../img/icon-4.svg);
+  background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 26px; /*уточнить*/
 }
 
 .delivery-offers {
   background-color: #ffc047;
-  background-image: url(../img/icon-5.svg);
+  background-image: url("../img/icon-5.svg");
   background-repeat: no-repeat;
   background-position: 191px 32px; /*уточнить*/
 }
@@ -198,7 +197,7 @@ h1 .page-title,
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -209,19 +208,19 @@ h1 .page-title,
 }
 
 .slider-wrapper {
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: #a0522d;
 }
 
 .slider-drill {
-  background-image: url(../img/slider-drill.jpg);   /*уточнить!*/
+  background-image: url("../img/slider-drill.jpg");   /*уточнить!*/
   background-repeat: no-repeat;
 }
 
 .slider-perforator {
-  background-image: url(../img/slide-perforator.jpg);   /*уточнить!*/
+  background-image: url("../img/slide-perforator.jpg");   /*уточнить!*/
   background-repeat: no-repeat;
 }
 
@@ -270,8 +269,8 @@ h1 .page-title,
   color: #32425c;
 }
 
-.popular-product a.buttom,
-.popular-brands a.buttom {
+.popular-product a.button,
+.popular-brands a.button {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -280,10 +279,10 @@ h1 .page-title,
   background-color: #ee3643;
 }
 
-.popular-product-header a.buttom:hover,
-.popular-product-header a.buttom:focus,
-.popular-brands a.buttom:hover,
-.popular-brands a.buttom:focus {
+.popular-product-header a.button:hover,
+.popular-product-header a.button:focus,
+.popular-brands a.button:hover,
+.popular-brands a.button:focus {
   background-color: #ca2c37;
 }
 .catalog-category,
@@ -293,14 +292,14 @@ h1 .page-title,
   line-height: 20px;
   color: #000000;
 }
-.old-prise {
+.old-price {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
   color: #999999;
   text-decoration: line-through;
 }
-.new-prise {
+.new-price {
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -308,45 +307,45 @@ h1 .page-title,
 
   background-color: #ee3643;
 }
-.buttom-booking {
+.button-booking {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #63a63e;
 }
 
-.buttom-booking:hover,
-.buttom-booking:focus {
+.button-booking:hover,
+.button-booking:focus {
   background-color: #5fbb2d;
 }
 
-.buttom-booking:active {
+.button-booking:active {
   background-color: #518534;
 }
 
-.buttom-marker {
+.button-marker {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
 
   background-color: #ffffff;
-  border: solid 3px #63a63e;
+  border: 3px solid #63a63e;
 }
 
-.buttom-marker:hover,
-.buttom-marker:focus {
-  border: solid 3px #32425c;
+.button-marker:hover,
+.button-marker:focus {
+  border: 3px solid #32425c;
 }
 
-.buttom-marker:active {
+.button-marker:active {
   color: rgba(50, 66, 92, 0.3);
 
-  border: solid 3px #32425c;
+  border: 3px solid #32425c;
 }
 
 .services {
@@ -357,7 +356,7 @@ h1 .page-title,
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
 }
@@ -367,7 +366,7 @@ h1 .page-title,
 .contact a {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -386,7 +385,7 @@ h1 .page-title,
 .delivery-list {
   font-size: 18px;
   line-height: 20px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -402,7 +401,7 @@ h1 .page-title,
   text-transform: uppercase;
 }
 
-.catalog-page-title {
+.page-title {
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
@@ -441,7 +440,7 @@ h1 .page-title,
   letter-spacing: 0.2px;
 }
 
-.filter-buttom {
+.filter-button {
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -461,21 +460,26 @@ h1 .page-title,
   color: #000000;
   text-transform: uppercase;
 }
-.sorting-list a {
+.sort-link {
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
 
   border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-list a:hover,
-.sorting-list a:focus {
+.sort-link.active {
+  color: #ee3643;
+
+  border-bottom: none;
+}
+
+.sort-link:hover,
+.sort-link:focus {
   color: #000000;
 
   border-bottom: 1px solid #ee3643;
 }
-.sorting-list a:active {
-  /*уточнить*/
+.sort-link:active {
   color: #ee3643;
 
   border-bottom: none;
@@ -484,20 +488,20 @@ h1 .page-title,
 .pagination-item a {
   font-size: 13px;
   line-height: 1.38;
-  font-family: PTSans;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
-  border: solid 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus {
-  border: solid 1px #bdc6ca;
+  border: 1px solid #bdc6ca;
 }
 
 .pagination-item a:active {
-  border: solid 1px #ee3643;
+  border: 1px solid #ee3643;
 }
 
 .pagination-item-current a {
@@ -507,11 +511,16 @@ h1 .page-title,
 }
 
 /* Футер */
+.social-footer ul,
+.footer-navigation {
+  list-style: none;
+}
+
 .footer-top {
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #f1f5f7;
 
   background-color: #32425c;
@@ -521,7 +530,7 @@ h1 .page-title,
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: #293449;
@@ -566,7 +575,7 @@ h1 .page-title,
 .popup-product-in-basket {
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: center;
   color: #000000;
 
@@ -574,21 +583,21 @@ h1 .page-title,
   border-top: 7px solid #ee3643;
 }
 
-.buttom-block {
+.button-block {
   font-size: 14px;
   line-height: 18px;
 
   background-color: #f1f1f1;
 }
 
-.buttom-checkout {
+.button-checkout {
   color: #ffffff;
   text-transform: uppercase;
 
   background-color: #ee3643;
 }
 
-.buttom-shopping {
+.button-shopping {
   color: #000000;
   text-transform: uppercase;
 
@@ -598,24 +607,24 @@ h1 .page-title,
 .close-popup {
   /*уточнить?*/
   background-color: #ee3643;
-  background-image: url(../img/map-close.svg);
-  background-repeat: 0;
+  background-image: url("../img/map-close.svg");
+  background-repeat: no-repeat;
 }
 
 .popup-message {
   font-size: 18px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
 }
 
-.buttom-send {
+.button-send {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -629,17 +638,17 @@ h1 .page-title,
   font-family: "PT Sans", "Arial", sans-serif;
   color: #999999;
 
-  border: solid 2px #d7dcde;
+  border: 2px solid #d7dcde;
 }
 
 .popup-message input:hover,
 .popup-message textarea:hover {
-  border: solid 2px #b5b5b5;
+  border: 2px solid #b5b5b5;
 }
 
 .popup-message input:focus,
 .popup-message textarea:focus {
-  border: solid 2px #ee3643;
+  border: 2px solid #ee3643;
 }
 
 
