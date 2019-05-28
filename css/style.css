@@ -90,7 +90,6 @@ a {
   list-style: none;
 }
 
-
 .user-navigation a,
 .user-login a {
   font-size: 21px;
@@ -111,7 +110,7 @@ a {
   color: #ee3643;
 }
 
-.main-navigation {
+.main-navigation ul {
   background-color: #32425c;
 }
 
@@ -285,6 +284,7 @@ a {
 .popular-brands a.button:focus {
   background-color: #ca2c37;
 }
+
 .catalog-category,
 .catalog-model {
   font-weight: bold;
@@ -292,6 +292,7 @@ a {
   line-height: 20px;
   color: #000000;
 }
+
 .old-price {
   font-weight: bold;
   font-size: 17px;
@@ -299,6 +300,7 @@ a {
   color: #999999;
   text-decoration: line-through;
 }
+
 .new-price {
   font-weight: bold;
   font-size: 17px;
@@ -307,6 +309,7 @@ a {
 
   background-color: #ee3643;
 }
+
 .button-booking {
   font-size: 14px;
   line-height: 18px;
@@ -510,6 +513,20 @@ a {
   background-color: #ee3643;
 }
 
+.perforator {
+  background-color: #f4f7f9;
+}
+
+.perforator h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: Cuprum;
+  font-weight: normal;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+
 /* Футер */
 .social-footer ul,
 .footer-navigation {
@@ -651,5 +668,307 @@ a {
   border: 2px solid #ee3643;
 }
 
+/*Сетки*/
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
+/*Хедер*/
+.top-header .container  {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 45px;
+}
+
+.logo {
+	padding: 13px 55px;
+}
+
+.middle-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.index-page-title,
+.page-description {
+	margin: 0;
+	padding: 0;
+	width: 196px;
+}
+
+.phone-numder a {
+  margin: 0;
+  text-align: center;
+  padding: 8px 50px 8px 70px;
+}
+
+.address {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.user-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Основное содержание index.html*/
+.offers-block {
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.offers-block h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.popular-product-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.popular-product-header h2 {
+  margin: 30px auto 30px 30px;
+  padding: 0;	
+}
+
+.popular-product-header .button {
+  margin: 25px 24px 26px auto;	
+  padding: 12px 55px;	
+}
+
+.popular-brands-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+	margin-top: 21px; /*перебить позже*/
+}
+
+.popular-brands-header h2 {
+  margin: 30px auto 30px 30px;
+  padding: 0;	
+}
+
+.popular-brands-header .button {
+  margin: 25px 24px 26px auto;	
+  padding: 12px 55px;	
+}
+
+/*сервисы*/
+
+.services {
+  padding-bottom: 50px;
+  margin-bottom: 80px;
+}
+
+.lead-box {
+  width: 400px;
+  padding-top: 65px;
+  margin-bottom: 23px;
+}
+
+.lead-box h2 {
+  margin: 0 0 30px 0;
+  padding: 0;   
+}
+
+.services-text {
+  margin: 0;
+  padding: 0;    
+}
+
+.slider-services {
+  display: flex; 
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+
+.delivery {
+  margin-left: 80px
+}
+
+.delivery h3 {
+  margin: 0 0 28px 0;
+  padding: 46px 0 0 0;
+}
+
+.delivery-text {
+  margin: 0;
+  padding: 0;  
+}
+
+.warranty {
+  display: none;
+  margin-left: 80px
+}
+
+.warranty h3 {
+  margin: 0 0 28px 0;
+  padding: 46px 0 0 0;
+}
+
+.warranty-text {
+  margin: 0;
+  padding: 0;  
+}
+
+.credit {
+  display: none;
+  margin-left: 80px
+}
+
+.credit h3 {
+  margin: 0 0 28px 0;
+  padding: 46px 0 0 0;
+}
+
+.credit-text {
+  margin: 0;
+  padding: 0; 
+} 
+
+.slider-services-buttons {
+	display: flex;
+  flex-direction: column;
+  padding-top: 46px;
+}
+
+.services-button {
+	width: 240px;
+	background-color: #32425c;
+	font-family: Cuprum;
+	font-size: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 30px;
+	text-align: left;
+	padding-left: 35px;
+	padding-top: 16px;
+	padding-bottom: 15px;
+	border: 0;
+	border-bottom: 1px solid black;
+}
+
+.services-button.active {
+  background-color: #ffffff;
+  color: #32425c;  
+}
+
+.wrapper-company {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.about-company {
+  width: 520px;
+}
+
+.company-title {
+  margin: 0 0 33px 0;
+  padding: 0; 
+}
+
+.about-company p {  /*Второй абзац?!*/
+  margin: 0 0 25px 0;	
+  padding: 0; 
+}
+
+.delivery-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+.contact {
+  width: 300px;
+}
+
+.contact-title {
+  margin: 0 0 33px 0;
+  padding: 0; 
+}
+
+.contact p {
+  width: 180px;
+  margin: 0 0 30px 0;
+  padding: 0; 
+}
+
+/*Основное содержание catalog.html*/
+
+.perforator {
+  padding-top: 67px;
+  padding-bottom: 68px;
+}
+
+.perforator h2 {
+  margin: 0 0 20px 0;
+  padding: 0;  
+
+} 
+
+.perforator p {
+  margin: 0;
+  padding: 0;  
+} 
+
+  /*Футер*/
+
+.footer-top .container  {   /*проверить margin внутри футера*/
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-top .logo {
+  margin: 0;
+  padding: 13px 55px;
+}
+
+.footer-navigation {
+  margin: 0;
+  padding: 0;    
+}
+
+.offers {
+  margin: 0;
+  padding: 0;   
+}
+
+.footer-contact {
+  margin: 0;
+  padding: 0;  
+}
+
+.footer-copyright .container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.social-footer ul {
+  margin: 0;
+  padding: 0;  
+}
