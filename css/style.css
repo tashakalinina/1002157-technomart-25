@@ -1393,7 +1393,7 @@ background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap*
+  flex-wrap: wrap;
 }
 
 .social-footer-list a {
@@ -1634,8 +1634,3 @@ padding-bottom: 22px;
   
   background: #ee3643;
 }
-  
-  /* Временно для демонстрации */
-  background-color: red;
-}
-
