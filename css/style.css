@@ -700,6 +700,48 @@ background-color: rgba(0, 0, 0, 0.3);
   0px 5px 0 0 #ee3643;
 }
 
+.search {
+  position: relative;
+}
+
+.search::before {
+  content: "";
+  height: 17px;
+  width: 17px;
+  background-image: url("../img/icon-search.svg");
+  position: absolute;
+  top: 11px;
+  left: 17px;
+  opacity: 0.3;
+}
+
+.search:hover::before,
+.search:focus::before {
+ opacity: 1;
+}
+
+.search input {
+  background-color: #293449;
+  border: none;
+  font: inherit;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:focus {
+  background-color: #ffffff;
+}
+
+.search:hover input {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: #ffffff;
+}
+
 .booking-block {
 	display: flex;
 }
@@ -833,10 +875,77 @@ background-color: rgba(0, 0, 0, 0.3);
   width: 300px; 
 }
 
+.user-login {
+  display: flex;
+  background-color: #ffffff; 
+}
+.user-name {
+  display: block;
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 47px; 
+}
+
+.user-name::before {
+  content: "";
+  height: 18px;
+  width: 20px;
+  background-image: url("../img/icon-user.svg");
+  position: absolute;
+  top: 15px;
+  left: 13px;
+}
+
+
+.exit {
+  display: block;
+  position: relative;
+  padding-top: 13px;
+  padding-bottom: 11px;
+}
+
+.exit::before {
+  content: "";
+  height: 17px;
+  width: 20px;
+  background-image: url("../img/icon-logout.svg");
+  position: absolute;
+  top: 16px;
+  left: 35px;
+}
+
+
 .user-menu {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 17px;
+  padding-top: 8px; 
 }
+
+.user-menu li {
+  padding-right: 32px; 
+  position: relative;
+}
+
+.user-menu li:not(:last-child)::before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: #32425c;
+  border-radius: 50%; 
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  margin: -2px;
+}
+
+.user-menu li:last-child {
+  padding: 0;
+}
+
 
 .main-navigation ul {
   margin: 0;
@@ -1199,11 +1308,23 @@ background-color: rgba(0, 0, 0, 0.3);
 
 .breadcrumbs-item {
   padding-right: 40px;
+  position: relative;
 }
 
 .breadcrumbs-item:last-child {
   padding-right: 0;
 }
+
+.breadcrumbs-item a::after {
+  content: "";
+  height: 12px;
+  width: 8px;
+  background-image: url("../img/icon-right-small.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 
 .breadcrumbs-item:first-child {
   background-image: url("../img/icon-home.svg");
@@ -1633,4 +1754,101 @@ padding-bottom: 22px;
   border-radius: 50%;
   
   background: #ee3643;
+}
+
+/*Каталог*/
+
+.card-product h3 {
+margin: 0;
+padding: 9px 30px;
+text-align: center;
+}
+
+.catalog-price {
+  margin-top: 5px;
+ 
+ }
+
+.old-price {
+  text-align: center;
+  padding-bottom: 12px; 
+}
+
+.new-price {
+  position: relative;
+  width: 80px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 11px 30px;
+  
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
+
+.new-price::after {
+  content: "";
+  
+  position: absolute;
+  top: 0;
+  right: -20px;
+  
+  width: 0;
+  height: 0;
+  
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.standart-price {
+  margin-top: 35px;
+}
+
+.card-product {
+position: relative;
+}
+
+.catalog-popup {
+position: absolute;
+top: 4px;
+left: 42px; 
+z-index: 10;
+background-color: rgba(255,255,255,0.9);
+padding: 40px 0;
+}
+
+.card-product .catalog-popup {
+  display: none;
+}
+
+.card-product:hover .catalog-popup {
+  display: block;
+}
+
+.button-booking {
+  display: block;
+  position: relative;
+  padding: 10px 46px 10px 49px;
+  width: 41px;
+  margin-bottom: 7px;
+  border-radius: 3px; 
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.button-booking::before {
+  content: "";
+  
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/cart-icon.svg");
+  opacity: 0.3; 
+}
+
+.button-marker {
+  display: block;
+  padding: 8px 29px 7px 33px;
+  width: 68px;
 }
