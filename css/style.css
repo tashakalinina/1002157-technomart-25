@@ -265,12 +265,16 @@ a {
 .user-navigation a {
   display: block;
   margin-left: 10px;
-  padding: 12px 25px;
+ 
 }
 
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: #ee3643;
+}
+
+.check-in {
+  padding: 12px 25px;
 }
 
 .user-block {
@@ -283,20 +287,18 @@ a {
   background-color: #ffffff;
 }
 
-.login-link a {
-  position: relative;
-  padding-left: 14px;
-
+.login-link {
+  padding: 12px 14px;
+  min-width: 93px;
 }
 
 .login-link svg {
   fill: #c5c5c5;
-
+  padding-right: 14px;
 }
 
 .login-link:hover {
   color: #ee3643;
-
 }
 
 .login-link:hover svg {
@@ -304,12 +306,9 @@ a {
 }
 
 .user-name {
-  position: relative;
-
   display: block;
-  padding-top: 13px;
-  padding-bottom: 11px;
-  padding-left: 47px;
+  padding-top: 12px;
+  padding-bottom: 9px;
 
   font-size: 21px;
   line-height: 21px;
@@ -318,36 +317,27 @@ a {
   background-color: #ffffff;
 }
 
-.user-name::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 13px;
+.user-name svg {
+  fill: #c5c5c5;
+  padding-left: 10px; 
+  padding-right: 14px;
+}
 
-  width: 20px;
-  height: 18px;
-
-  background-image: url("../img/icon-user.svg");
+.user-name:hover svg {
+  fill: #32425C
 }
 
 .exit {
-  position: relative;
-
   display: block;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-left: 30px; 
+  padding-right: 10px; 
+  fill:  #c5c5c5;
 }
 
-.exit::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 35px;
-
-  width: 20px;
-  height: 17px;
-
-  background-image: url("../img/icon-logout.svg");
+.exit:hover svg {
+  fill: #32425C;  
 }
 
 .user-menu {
