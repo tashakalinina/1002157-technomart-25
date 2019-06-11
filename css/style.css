@@ -284,12 +284,27 @@ a {
 
 .login-link a {
   position: relative;
+  padding-left: 14px;
 
-  padding-left: 48px;
 }
 
+.login-link svg {
+  fill: #c5c5c5;
+
+}
+
+.login-link:hover {
+  color: #ee3643;
+
+}
+
+.login-link:hover svg {
+  fill: #32425C;
+}
+
+/*
 .login-link a::before {
-  /*цвет*/
+
   content: "";
   position: absolute;
   top: 14px;
@@ -300,7 +315,7 @@ a {
 
   background-image: url("../img/icon-login.svg");
 }
-
+*/
 .user-name {
   position: relative;
 
@@ -400,6 +415,7 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  box-shadow: inset 0px -5px 0 0 #293449;
 
   list-style: none;
 
@@ -420,6 +436,10 @@ a {
   background-color: #293449;
 }
 
+.main-navigation a:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
+}
 
 /*main - index.html*/
 
@@ -479,10 +499,6 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.offers-block .wrapper {
-  float: right;
-}
-
 .offers-block .new {
   position: relative;
 }
@@ -500,11 +516,25 @@ a {
   background-repeat: no-repeat;
 }
 
+.wrapper-offers-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.offers-block .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-offers-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
 .material-offers {
-  float: left;
   width: 300px;
   min-height: 123px;
-  margin-right: 20px;
   margin-bottom: 20px;
 
   background-color: #ffbf47;
@@ -514,10 +544,8 @@ a {
 }
 
 .instrument-offers {
-  float: left;
   width: 300px;
   min-height: 123px;
-  margin-right: 20px;
   margin-bottom: 20px;
 
   background-color: #3bbce3;
@@ -527,7 +555,6 @@ a {
 }
 
 .equipment-offers {
-  float: right;
   width: 300px;
   min-height: 123px;
   margin-bottom: 20px;
@@ -547,10 +574,6 @@ a {
   background-image: url("../img/icon-4.svg");
   background-repeat: no-repeat;
   background-position: 196px 26px;
-}
-
-.clearfix {
-  clear: both;
 }
 
 .delivery-offers {
@@ -573,6 +596,7 @@ a {
   color: #ffffff;
 
   background-color: #a0522d;
+  order: -1;
 }
 
 .slider-list {
