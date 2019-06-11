@@ -273,6 +273,10 @@ a {
   color: #ee3643;
 }
 
+.user-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .check-in {
   padding: 12px 25px;
 }
@@ -297,12 +301,13 @@ a {
   padding-right: 14px;
 }
 
-.login-link:hover {
-  color: #ee3643;
+.login-link:hover svg,
+.login-link:focus svg {
+  fill: #32425C;
 }
 
-.login-link:hover svg {
-  fill: #32425C;
+.login-link:active svg {
+  fill: #c5c5c5;
 }
 
 .user-name {
@@ -317,14 +322,23 @@ a {
   background-color: #ffffff;
 }
 
+.user-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .user-name svg {
   fill: #c5c5c5;
   padding-left: 10px; 
   padding-right: 14px;
 }
 
-.user-name:hover svg {
+.user-name:hover svg,
+.user-name:focus svg {
   fill: #32425C
+}
+
+.user-name:active svg {
+  fill: #c5c5c5;
 }
 
 .exit {
@@ -336,8 +350,13 @@ a {
   fill:  #c5c5c5;
 }
 
-.exit:hover svg {
+.exit:hover svg,
+.exit:focus svg {
   fill: #32425C;  
+}
+
+.exit:active svg {
+  fill: #c5c5c5;
 }
 
 .user-menu {
@@ -384,6 +403,10 @@ a {
 .user-menu a:hover,
 .user-menu a:focus {
   color: #ee3643;
+}
+
+.user-menu a:active {
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .main-navigation ul {
