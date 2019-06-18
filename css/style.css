@@ -53,7 +53,7 @@ a {
 }
 
 .logo {
-  padding: 10px 55px 9px 55px;
+  padding: 13px 55px 6px 55px;
 
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24),
@@ -65,6 +65,63 @@ a {
   background-color: #ca2c37;
 }
 
+.search {
+  width: 270px;
+  background-color: #293449;  
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.search:hover svg {
+  fill: rgba(255,255,255,1);
+}
+
+.search:active {
+  background-color: #293449;
+}
+
+.search:active svg {
+  fill: rgba(255,255,255,0.3);  
+}
+
+.search label {
+  display: inline-block;
+  margin: 0;
+  width: 17px;
+  padding: 10px 15px 11px 17px;
+}
+
+.search svg {
+  fill: rgba(255,255,255,0.3);
+}
+
+.search input {
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 11px;  
+  background-color: transparent;
+  font: inherit;
+  color: #ffffff;
+}
+
+.search input:focus {
+  color: #000000;
+  background-color: #ffffff; 
+}
+
+.search input::-webkit-input-placeholder {
+  color: #ffffff;
+ } 
+
+ .search input::-moz-placeholder {
+  color: #ffffff;
+ }
+
+
+
+/*
 .search {
   position: relative;
 
@@ -111,6 +168,8 @@ a {
 .search input:focus {
   background-color: #ffffff;
 }
+*/
+
 
 .top-header a {
   color: #ffffff;
@@ -118,12 +177,13 @@ a {
 
 .booking-block {
   display: flex;
+  width: 455px;
 }
 
 .marker {
   position: relative;
 
-  padding: 10px 28px 9px 44px;
+  padding: 13px 28px 6px 44px;
 }
 
 .marker::before {
@@ -151,7 +211,11 @@ a {
 .basket {
   position: relative;
 
-  padding: 10px 30px 9px 50px;
+  padding: 13px 27px 6px 50px;
+}
+
+.full-basket {
+  background-color: #ee3643; 
 }
 
 .basket::before {
@@ -177,7 +241,8 @@ a {
 }
 
 .booking {
-  padding: 10px 20px 9px 20px;
+  padding: 13px 25px 6px 16px;
+
 
   background-color: #63a63e;
 }
@@ -197,8 +262,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 46px;
+  padding-bottom: 35px;
   min-height: 78px;
 }
 
@@ -207,6 +272,7 @@ a {
   width: 196px;
   margin: 0;
   padding-left: 53px;
+  padding-top: 5px;
 
   font-style: italic;
   font-weight: normal;
@@ -217,6 +283,7 @@ a {
 
 .contact-header {
   width: 270px;
+  padding-left: 15px;
 }
 
 .phone-numder a {
@@ -328,8 +395,8 @@ a {
 
 .user-name svg {
   fill: #c5c5c5;
-  padding-left: 10px; 
-  padding-right: 14px;
+  padding-left: 14px; 
+  padding-right: 11px;
 }
 
 .user-name:hover svg,
@@ -364,8 +431,8 @@ a {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 8px;
-  padding-left: 17px;
+  padding-top: 5px;
+  padding-left: 19px;
 
   list-style: none;
 }
@@ -415,7 +482,9 @@ a {
   justify-content: space-around;
   margin: 0;
   padding: 0;
-  box-shadow: inset 0px -5px 0 0 #293449;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: inset 0 -5px 0 0 #293449;
 
   list-style: none;
 
@@ -442,9 +511,8 @@ a {
 }
 
 /*main - index.html*/
-
 .offers-block {
-  margin-top: 60px;
+  margin-top: 59px;
   margin-bottom: 55px;
 }
 
@@ -453,8 +521,7 @@ a {
   padding: 0;
 
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+
   font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
@@ -466,9 +533,11 @@ a {
 .delivery-offers h3 {
   position: relative;
 
-  padding-top: 23px;
+  padding-top: 21px;
   padding-bottom: 12px;
   padding-left: 23px;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .offers-block a {
@@ -476,8 +545,8 @@ a {
   min-width: 86px;
   margin-right: 140px;
   margin-left: 25px;
-  padding-top: 10px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 18px;
@@ -607,29 +676,35 @@ a {
 }
 
 .slider-item {
-  padding-top: 27px;
-  padding-bottom: 22px;
-  padding-left: 24px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+  padding-left: 25px;
 }
 
 .slider-item-title {
   margin: 0;
   padding: 0;
 
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;  
+
   text-transform: uppercase;
 }
 
 .slider-item p {
   margin: 0;
-  padding-top: 5px;
+  padding-top: 2px;
   padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .slider-item a {
   width: 100px;
   margin: 0;
   margin-top: 115px;
-  padding: 12px 45px 12px 49px;
+  padding: 11px 45px 9px 49px;
 
   background-color: #ee3643;
   border-radius: 3px;
@@ -670,7 +745,7 @@ a {
   position: absolute;
   top: 215px;
   left: 50%;
-  z-index: 100;
+  z-index: 2;
 }
 
 .slider-controls i {
@@ -699,13 +774,39 @@ a {
   border-radius: 50%;
 }
 
+.back-slider {
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("../img/icon-left.svg");
+  border: 0;
+
+  cursor: pointer;
+  position: absolute;
+  top: 114px;
+  left: 25px;
+}
+
+.next-slider {
+  width: 22px;
+  height: 40px;
+  background-color: transparent;
+  background-image: url("../img/icon-right.svg");
+  border: 0;
+
+  cursor: pointer;
+  position: absolute;
+  top: 114px;
+  right: 25px;
+}
+
 .popular-product-header,
 .popular-brands-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  padding: 30px 25px;
+  padding: 25px 25px;
 
   background-color: #f9f5f0;
 }
@@ -725,6 +826,7 @@ a {
 
 .popular-product-header a.button,
 .popular-brands-header a.button {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -746,16 +848,18 @@ a {
 }
 
 .popular-product-header .button {
-  min-width: 170px;
-  padding: 10px 55px;
+  min-width: 155px;
+  padding: 10px 50px;
 
   border-radius: 3px;
 }
 
 .popular-brands-header .button {
-  padding: 10px 70px;
+  min-width: 155px;
+  padding: 10px 50px;
 
   border-radius: 3px;
+  text-align: center;
 }
 
 .popular-list {
@@ -777,9 +881,10 @@ a {
 
 .card-product h3 {
   margin: 0;
-  padding: 9px 30px;
+  padding: 0 30px 5px 30px;
 
   text-align: center;
+  line-height: 20px;
 }
 
 .catalog-category,
@@ -795,7 +900,7 @@ a {
 }
 
 .old-price {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
 
   font-weight: bold;
   font-size: 17px;
@@ -810,7 +915,7 @@ a {
 
   width: 80px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 11px 30px;
 
   font-weight: bold;
@@ -837,7 +942,7 @@ a {
 }
 
 .standart-price {
-  margin-top: 35px;
+  margin-top: 33px;
 }
 
 .card-product {
@@ -848,7 +953,7 @@ a {
   position: absolute;
   top: 4px;
   left: 42px;
-  z-index: 10;
+  z-index: 1;
 
   padding: 40px 0;
 
@@ -930,12 +1035,30 @@ a {
   border: 3px solid #32425c;
 }
 
+.card-product.new {
+  position: relative;
+}
+
+.card-product.new::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: 59px;
+  height: 60px;
+
+  background-image: url("../img/new-flag.png");
+  background-repeat: no-repeat;
+}
+
 .popular-brands-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 63px;
   padding: 0;
 
   list-style: none;
@@ -968,8 +1091,8 @@ a {
 
 .services {
   margin-bottom: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 52px;
+  padding-bottom: 52px;
 
   background-color: #f4f7f9;
 }
@@ -995,7 +1118,7 @@ a {
 .services-text {
   margin: 0;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
@@ -1032,12 +1155,12 @@ a {
   width: 240px;
   padding-top: 16px;
   padding-bottom: 15px;
-  padding-left: 35px;
+  padding-left: 25px;
 
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   text-align: left;
   color: #ffffff;
 
@@ -1080,7 +1203,7 @@ a {
   content: "";
   position: absolute;
   top: 67px;
-  left: 138px;
+  left: 150px;
 
   width: 468px;
   height: 261px;
@@ -1091,7 +1214,7 @@ a {
 .delivery-text {
   width: 275px;
   margin: 0;
-  padding: 13px 0;
+  padding: 7px 0;
 }
 
 .warranty {
@@ -1115,7 +1238,7 @@ a {
 .warranty-text {
   width: 379px;
   margin: 0;
-  padding: 13px 0;
+  padding: 7px 0;
 }
 
 .credit {
@@ -1138,7 +1261,7 @@ a {
 
 .credit-text {
   margin: 0;
-  padding: 13px 0;
+  padding: 7px 0;
 } 
 
 .credit a {
@@ -1192,13 +1315,19 @@ a {
 
 .about-company p {
   margin: 0;
-  padding: 12px 0;
+  padding: 5px 0;
+}
+
+p.delivery-company {
+  margin: 0;
+  padding: 20px 0 10px 0;
+  width: 390px;
 }
 
 .about-company a {
   display: block;
   width: 140px;
-  margin-top: 32px;
+  margin-top: 27px;
   padding: 10px 40px;
 
   font-size: 14px;
@@ -1262,7 +1391,7 @@ a {
 .contact p {
   width: 180px;
   margin: 0;
-  padding: 12px 0 30px 0;
+  padding: 5px 0 30px 0;
 }
 
 .contact .button {
@@ -1294,11 +1423,10 @@ a {
 
 .contact .map {
   display: block;
-  padding-bottom: 40px;
+  padding-bottom: 35px;
 }
 
 /*Футер*/
-
 .footer-top {
   font-weight: normal;
   font-size: 18px;
@@ -1318,7 +1446,7 @@ a {
 
 .footer-top .logo {
   margin: 0;
-  padding: 20px 41px;
+  padding: 17px 41px;
 
   box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24),
   0 5px 0 0 #ee3643;
@@ -1418,7 +1546,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 35px; /*уточнити*/
+  padding-top: 35px; 
   padding-bottom: 28px;
 }
 
@@ -1428,7 +1556,6 @@ a {
   padding: 0;
   padding-right: 160px;
 }
-
 
 .social-footer-list {
   display: flex;
@@ -1509,13 +1636,12 @@ a {
 }
 
 /*Основное содержание catalog.html*/
-
 .breadcrumbs {
   display: flex;
   justify-content: flex-start;
   margin: 0;
   margin-top: 10px;
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   padding: 10px 20px 10px  0;
 
   list-style: none;
@@ -1561,7 +1687,7 @@ a {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #32425c;
   text-transform: uppercase;
 
@@ -1585,8 +1711,8 @@ a {
 
 .sorting h2 {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 120px;
 
@@ -1602,9 +1728,8 @@ a {
   display: flex;
   justify-content: space-between;
   width: 480px;
-/*нужно дополнить (см. макет)*/
   margin: 0;
-  padding: 5px 17px 5px 20px;
+  padding: 3px 17px 7px 20px;
 
   list-style: none;
 }
@@ -1637,7 +1762,7 @@ a {
 .down-up-block {
   display: flex;
   justify-content: space-between;
-  width: 43px;
+  width: 60px;
   padding-right: 17px;
   padding-left: 30px;
 }
@@ -1656,8 +1781,8 @@ a {
 
 .filters h2 {
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 12px;
   padding-left: 20px;
 
   font-style: normal;
@@ -1718,13 +1843,13 @@ a {
 .filter-brands legend {
   display: block; 
   border-top: 1px solid #e5e5e5; 
-  padding-top: 20px; 
-  padding-bottom: 13px; 
+  padding-top: 16px; 
+  padding-bottom: 16px; 
   padding-right: 76px;
 }
 
 .filter-battery legend {
-  padding-top: 12px;
+  padding-top: 17px;
   padding-bottom: 13px; 
   padding-right: 142px;
   border-top: 1px solid #e5e5e5; 
@@ -1805,6 +1930,7 @@ a {
   border: none;
   border-radius: 5px;
 }
+
 .max-price input {
   margin-left: 8px;
 }
@@ -1816,7 +1942,7 @@ a {
 }
 
 .filter-battery li {
-  margin-bottom: 15px; 
+  margin-bottom: 20px; 
   padding-left: 40px; 
 }
 
@@ -1868,7 +1994,7 @@ a {
 }
 
 .filter-brands li {
-  margin-bottom: 15px; 
+  margin-bottom: 20px; 
   padding-left: 40px; 
 }
 
@@ -1897,7 +2023,6 @@ a {
  
   background-image: url(../img/checkbox-off.svg);
 }
-
 
 .filter-input-checked:checked + label::after {
   content: "";
@@ -1963,17 +2088,18 @@ a {
 }
 
 .pagination-item a {
+  display: block;
   margin-right: 10px;
-  padding: 10px 14px;
+  padding: 10px 15px;
 
   font-size: 13px;
-  line-height: 1.38;
+  line-height: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 
   border: 1px solid #e5e5e5;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .pagination-item.next a {
@@ -1998,7 +2124,7 @@ a {
 
 .perforator {
   padding-top: 57px;
-  padding-bottom: 58px;
+  padding-bottom: 60px;
 
   background-color: #f4f7f9;
 }
@@ -2010,7 +2136,7 @@ a {
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: Cuprum;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 } 
@@ -2020,12 +2146,13 @@ a {
   padding: 10px 0;
 } 
 
-/*попап - пересмотреть*/
+/*попапы*/
 .popup-message {
   display: none;
   position: fixed;
   top: 185px;
   left: 50%;
+  z-index: 3;
   margin-left: -310px;
   font-size: 18px;
   line-height: 18px;
@@ -2035,7 +2162,7 @@ a {
   background-color: #ffffff;
   border-top: 7px solid #ee3643;
   width: 620px;
-  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .form-block {
@@ -2103,7 +2230,6 @@ a {
   border: 2px solid #ee3643;
 }
 
-
 .button-block {
   display: flex;
   justify-content: space-between;
@@ -2159,7 +2285,7 @@ a {
 
   position: absolute;
   top: 9px;
-  left: 0px;
+  left: 0;
 
   width: 21px;
   height: 3px;
@@ -2184,6 +2310,8 @@ a {
   top: 25px;
   left: 50%;
   margin-left: -470px;
+  z-index: 3;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .popup-product-in-basket {
@@ -2191,6 +2319,7 @@ a {
   position: fixed;
   top: 185px;
   left: 50%;
+  z-index: 3;
   margin-left: -310px;
 
   font-size: 30px;
@@ -2205,7 +2334,7 @@ a {
   background-position: 81px 48px;
   border-top: 7px solid #ee3643;
   width: 620px;
-  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+  box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
 }
 
 .popup-product-in-basket p {
@@ -2246,4 +2375,8 @@ a {
   display: block;
   padding: 12px 48px 12px 44px;
   border-radius: 3px;
+}
+
+.popup-show {
+  display: block;
 }
