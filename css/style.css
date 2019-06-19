@@ -66,110 +66,60 @@ a {
 }
 
 .search {
-  width: 270px;
-  background-color: #293449;  
-}
-
-.search:hover {
-  background-color: #212a3a;
-}
-
-.search:hover svg {
-  fill: rgba(255,255,255,1);
-}
-
-.search:active {
-  background-color: #293449;
-}
-
-.search:active svg {
-  fill: rgba(255,255,255,0.3);  
-}
-
-.search label {
-  display: inline-block;
-  margin: 0;
-  width: 17px;
-  padding: 10px 15px 11px 17px;
-}
-
-.search svg {
-  fill: rgba(255,255,255,0.3);
+  position: relative;
 }
 
 .search input {
-  border: none;
-  padding-top: 15px;
-  padding-bottom: 11px;  
-  background-color: transparent;
+  width: 270px; 
   font: inherit;
-  color: #ffffff;
+  border: none;
+  padding-top: 13px;
+  padding-bottom: 11px;  
+  padding-left: 49px;
+  background-color: #293449;  
+  background-image: url("../img/icon-search.svg");
+  background-position: 17px 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+  background-image: url("../img/icon-search-hover.svg");
+  background-position: 17px 12px;
+  background-repeat: no-repeat;
+}
+
+.search input:active {
+  background-color: #293449;
+  background-image: url("../img/icon-search.svg");
+  background-position: 17px 12px;
+  background-repeat: no-repeat;
 }
 
 .search input:focus {
-  color: #000000;
-  background-color: #ffffff; 
+  background-color: #ffffff;
+  background-image: url("../img/icon-search-focus.svg");
+  background-position: 17px 12px;
+  background-repeat: no-repeat;
+  cursor: default;
 }
 
 .search input::-webkit-input-placeholder {
-  color: #ffffff;
- } 
-
- .search input::-moz-placeholder {
-  color: #ffffff;
- }
-
-
-
-/*
-.search {
-  position: relative;
-
-  padding: 10px 0 9px 50px;
+  color:#ffffff;
 }
 
-.search::before {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 17px;
-
-  width: 17px;
-  height: 17px;
-
-  background-image: url("../img/icon-search.svg");
-  opacity: 0.3;
+.search input::-moz-placeholder {
+  color:#ffffff;
 }
 
-.search:hover::before,
-.search:focus::before {
-  opacity: 1;
+.search input:-moz-placeholder {
+  color:#ffffff;
 }
 
-.search input {
-  font: inherit;
-
-  background-color: #293449;
-  border: none;
+.search input:-ms-input-placeholder {
+  color:#ffffff;
 }
-
-.search:hover {
-  background-color: #212a3a;
-}
-
-.search:focus {
-  background-color: #ffffff;
-}
-
-.search:hover input {
-  background-color: #212a3a;
-}
-
-.search input:focus {
-  background-color: #ffffff;
-}
-*/
-
 
 .top-header a {
   color: #ffffff;
