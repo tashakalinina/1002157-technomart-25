@@ -111,10 +111,12 @@ a {
 
 .search input::-moz-placeholder {
   color:#ffffff;
+  opacity: 1;
 }
 
 .search input:-moz-placeholder {
   color:#ffffff;
+  opacity: 1;
 }
 
 .search input:-ms-input-placeholder {
@@ -232,7 +234,6 @@ a {
 }
 
 .contact-header {
-  width: 270px;
   padding-left: 15px;
 }
 
@@ -651,10 +652,10 @@ a {
 }
 
 .slider-item a {
-  width: 100px;
+  width: 110px;
   margin: 0;
   margin-top: 115px;
-  padding: 11px 45px 9px 49px;
+  padding: 11px 40px 9px 44px;
 
   background-color: #ee3643;
   border-radius: 3px;
@@ -702,6 +703,7 @@ a {
   position: relative;
 
   display: inline-block;
+  vertical-align: center;
   width: 10px;
   height: 10px;
 
@@ -905,6 +907,7 @@ a {
   left: 42px;
   z-index: 1;
 
+
   padding: 40px 0;
 
   background-color: rgba(255,255,255,0.9);
@@ -914,8 +917,17 @@ a {
   display: none;
 }
 
-.card-product:hover .catalog-popup {
+.popular-item:hover .catalog-popup {
   display: block;
+}
+
+.catalog-item:hover .catalog-popup {
+  display: block;
+}
+
+.popular-item:hover,
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .button-booking {
@@ -1019,13 +1031,14 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .popular-brands-list a {
   width: 218px;
   min-height: 145px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   border: 1px solid #eaeaea;
 }
@@ -1861,6 +1874,7 @@ p.delivery-company {
 
 .price-controls label {
   display: inline-block;
+  vertical-align: center;
   width: 50%;
 
   font-size: 17px;
@@ -1921,6 +1935,10 @@ p.delivery-company {
  
   border: 5px solid  #c5c5c5;
   border-radius: 50%; 
+}
+
+.filter-input-radio:hover + label::before {
+  border-color: #b5b5b5;
 }
 
 .filter-input-radio:checked + label::after {
