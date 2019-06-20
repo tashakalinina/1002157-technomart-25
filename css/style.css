@@ -8,6 +8,10 @@ body {
   color: #000000;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -1044,13 +1048,22 @@ a {
 }
 
 .popular-brands-list a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+
   width: 218px;
   min-height: 145px;
 
   border: 1px solid #eaeaea;
+}
+
+.popular-brands-list img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  margin: auto;
 }
 
 .popular-brands-list li:hover,
@@ -1199,7 +1212,7 @@ a {
 .warranty::after {
   content: "";
   position: absolute;
-  top: 46px;
+  top: 45px;
   left: 239px;
 
   width: 389px;
@@ -1223,7 +1236,7 @@ a {
 .credit::after {
   content: "";
   position: absolute;
-  top: 45px;
+  top: 42px;
   left: 165px;
 
   width: 465px;
@@ -2368,6 +2381,52 @@ p.delivery-company {
   border-radius: 3px;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .popup-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.popup-error {
+  animation: shake 0.6s;
 }
